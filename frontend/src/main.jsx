@@ -5,7 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
 import Feedback from "./pages/Feedback.jsx";
-import BrowseNote from "./pages/Home.jsx";
+import BrowseNote from "./pages/BrowseNote.jsx";
 import Home from "./pages/Home.jsx";
 import App from "./App.jsx";
 

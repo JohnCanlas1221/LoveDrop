@@ -1,23 +1,24 @@
-import React from 'react';
+import React, { useState} from 'react';
+import { Link, Outlet } from "react-router-dom";
 
 const NavBar = () => {
 const [sidebarOpen, setSidebarOpen] = useState(false);
 
 return (
     <div>
-        <header className="p-5 tracking-wide">
-            <nav className="flex justify-between items-center text-sm text-white">
-                <h3 className="text-white text-lg font-semibold">
+        <header className="bg-gradient-to-t from-[#FFD6E0] to-[#FFF4F2] shadow-md p-5 ">
+            <nav className="flex justify-between items-center text-sm text-black">
+                <h3 className="text-rose-pink text-lg font-pacifico">
                     <Link to="Home">Love Drop</Link>
                 </h3>
 
                 {/* Desktop Links */}
-                <ul className="hidden md:flex gap-10">
+                <ul className="hidden md:flex gap-10 text-dark-brown">
                     <li>
-                        <Link to="Browse">Browse Notes</Link>
+                        <Link to="BrowseNote">Browse Notes</Link>
                     </li>
                     <li>
-                        <Link to="Feedbak">Feedback</Link>
+                        <Link to="Feedback">Feedback</Link>
                     </li>
                 </ul>
 
@@ -47,13 +48,15 @@ return (
 
         {/* Sidebar */}
         <div
-            className={`fixed top-0 left-0 h-full w-64 bg-[#010101] text-white p-6 z-50 transform transition-transform duration-300 ${
+            className={`shadow-md fixed top-0 left-0 h-full w-64 bg-gradient-to-t from-[#FFD6E0] to-[#FFF4F2] text-black p-6 z-50 transform transition-transform duration-300 ${
                 sidebarOpen ? "translate-x-0" : "-translate-x-full"
             }`}>
             <div className="flex justify-between items-center mb-8">
-                <h3 className="text-lg font-semibold">Love Drop</h3>
+                <h3 className="text-lg font-pacifico text-rose-pink">
+                    Love Drop
+                </h3>
                 <button onClick={() => setSidebarOpen(false)}>
-                    <svg
+                    <svg className='text-dark-brown'
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -65,7 +68,7 @@ return (
                     </svg>
                 </button>
             </div>
-            <ul className="flex flex-col gap-6">
+            <ul className="flex flex-col gap-6 font-poppins text-dark-brown">
                 <li>
                     <Link to="BrowseNote" onClick={() => setSidebarOpen(false)}>
                         Browse Note

@@ -1,1 +1,35 @@
 @import "tailwindcss";
+@plugin "daisyui";
+@theme {
+  --font-pacifico: "Pacifico", cursive;
+  --font-poppins: "Poppins", sans-serif;
+  --font-dancing-script: "Dancing Script", cursive;
+
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+
+  --font-size-heading: 48px;
+  --font-size-subheading: 18px;
+  --font-size-body: 16px;
+  --font-size-special: 20px;
+}
+
+@theme {
+    --color-rose-pink: #FF5C8A;
+    --color-blush: #FFD6E0;
+    --color-warm-cream: #FFF4F2;
+    --color-lavender: #B19CD9;
+    --color-sunset-orange: #FF9671;
+    --color-dark-brown: #4B3F3F;
+    --color-muted-gray: #6E6E6E;
+}
+
+
+/* <div class="text-rose-pink text-font-size-heading font-pacifico">Heading styled with Pacifico and Rose Pink </div><h2 class="text-dark-brown text-font-size-subheading font-poppins">Subheading styled with Poppins and Dark Brown </h2><p class="text-muted-gray text-font-size-body font-poppins">Body text styled with Poppins and Muted Gray </p><div class="text-dark-brown text-font-size-special font-dancing-script">Special Notes styled with Dancing Script and Dark Brown </div><button class="bg-sunset-orange text-white font-medium p-4 rounded">Call to Action </button> */
+
+
+body {
+    background: #FFD6E0;
+    background: linear-gradient(180deg, rgba(255, 214, 224, 1) 0%, rgba(255, 244, 242, 1) 50%);
+}
