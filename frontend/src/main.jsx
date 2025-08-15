@@ -8,6 +8,7 @@ import Feedback from "./pages/Feedback.jsx";
 import BrowseNote from "./pages/BrowseNote.jsx";
 import Home from "./pages/Home.jsx";
 import App from "./App.jsx";
+import SaveMessage from "./pages/SaveMessage.jsx";
 
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
             {
                 path: "/Feedback",
                 element: <Feedback />,
+            },
+            {
+                path: "/SaveMessage",
+                element: <SaveMessage />,
             },
         ],
     },

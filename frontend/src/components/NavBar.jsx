@@ -53,10 +53,11 @@ return (
             }`}>
             <div className="flex justify-between items-center mb-8">
                 <h3 className="text-lg font-pacifico text-rose-pink">
-                    Love Drop
+                    <Link to="Home">Love Drop</Link>
                 </h3>
                 <button onClick={() => setSidebarOpen(false)}>
-                    <svg className='text-dark-brown'
+                    <svg
+                        className="text-dark-brown"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"

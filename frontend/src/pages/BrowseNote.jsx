@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+
 
 const BrowseNote = () => {
-  return (
-    <div>
-      Browse Note
-    </div>
-  );
-}
+    return (
+        <>
+            Browser Note
+        </>
+    );
+};
 
 export default BrowseNote;

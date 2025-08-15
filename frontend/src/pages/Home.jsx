@@ -40,7 +40,7 @@ const Home = () => {
                     heart — anonymously or with your name.
                 </p>
                 <button className="text-poppins font-semibold bg-sunset-orange m-auto px-5 py-2 text-[12px] rounded-4xl">
-                    <Link to="SaveNote">Send a Message</Link>
+                    <Link to="SaveMessage">Send a Message</Link>
                 </button>
             </div>
 
