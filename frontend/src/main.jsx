@@ -5,17 +5,19 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
 import Feedback from "./pages/Feedback.jsx";
-import BrowseNote from "./pages/BrowseNote.jsx";
+import BrowseMessage from "./pages/BrowseMessage.jsx";
 import Home from "./pages/Home.jsx";
 import App from "./App.jsx";
 import SaveMessage from "./pages/SaveMessage.jsx";
+import ViewMessage from "./pages/ViewMessage.jsx";
+import Error404 from "./components/Error404.jsx"
 
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <NavBar />,
-        errorElement: <div>404 not Found</div>,
+        errorElement: <Error404 />,
         children: [
             {
                 index: true,
@@ -26,8 +28,12 @@ const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: "/BrowseNote",
-                element: <BrowseNote />,
+                path: "/BrowseMessage",
+                element: <BrowseMessage />,
+            },
+            {
+                path: "/BrowseMessage/ViewMessage",
+                element: <ViewMessage />,
             },
             {
                 path: "/Feedback",
